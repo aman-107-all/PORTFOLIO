@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+
+/* Reset */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f4f6f9;
+color:#333;
+line-height:1.6;
+}
+
+/* Navbar */
+
+nav{
+background:#ffffff;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 8px rgba(0,0,0,0.05);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+nav h2{
+font-weight:600;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+margin-left:20px;
+font-size:14px;
+}
+
+/* Hero */
+
+.hero{
+height:85vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(120deg,#667eea,#764ba2);
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+opacity:0.9;
+max-width:500px;
+}
+
+.skills{
+margin-top:20px;
+}
+
+.skills span{
+background:white;
+color:#333;
+padding:8px 14px;
+margin:5px;
+display:inline-block;
+border-radius:20px;
+font-size:13px;
+}
+
+/* Section */
+
+.section{
+padding:70px 8%;
+text-align:center;
+}
+
+.section h2{
+margin-bottom:40px;
+font-size:28px;
+}
+
+/* Projects */
+
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.project-card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.project-card:hover{
+transform:translateY(-5px);
+}
+
+.project-card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.project-card h3{
+padding:15px;
+}
+
+.project-card p{
+padding:0 15px 15px;
+font-size:14px;
+color:#666;
+}
+
+.project-card a{
+display:inline-block;
+margin:10px 0 20px;
+padding:10px 18px;
+background:#667eea;
+color:white;
+border-radius:20px;
+font-size:13px;
+text-decoration:none;
+}
+
+/* Contact */
+
+.contact{
+background:white;
+}
+
+.contact-links{
+margin-top:20px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.contact-links a{
+background:#764ba2;
+color:white;
+padding:12px 20px;
+border-radius:30px;
+text-decoration:none;
+font-size:14px;
+}
+
+/* Footer */
+
+footer{
+text-align:center;
+padding:20px;
+font-size:13px;
+color:#777;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:32px;
+}
+
+.section{
+padding:60px 5%;
+}
+
+nav{
+padding:15px 5%;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav>
+
+<h2>MyPortfolio</h2>
+
+<div>
+<a href="#home">Home</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+
+<!-- Home / Intro -->
+
+<section class="hero" id="home">
+
+<h1>I'm AMAN</h1>
+
+<p>I'm a Web Developer who creates modern and responsive websites using HTML, CSS, and JavaScript.</p>
+
+<div class="skills">
+
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+<span>Responsive Design</span>
+
+</div>
+
+</section>
+
+<!-- Projects -->
+
+<section class="section" id="projects">
+
+<h2>My Projects</h2>
+
+<div class="project-grid">
+
+<!-- Project 1 -->
+
+<div class="project-card">
+
+<img src="webpng\restaurant.png">
+
+<h3>Gym Website</h3>
+
+<p>A responsive fitness website with membership plans and workout programs.</p>
+
+<a href="https://aman-107-all.github.io/gym-website/">Live Demo</a>
+
+</div>
+
+<!-- Project 2 -->
+
+<div class="project-card">
+
+<img src="webpng/PersonalPortfolio.png">
+
+<h3>Personal Portfolio</h3>
+
+<p>A clean portfolio website to showcase projects and skills.</p>
+
+<a href="https://aman-107-all.github.io/PersonalPortfolio-website/">Live Demo</a>
+
+</div>
+
+
+<!-- Project 3 -->
+<div class="project-card">
+
+<img src="webpng\restaurant.png">
+
+<h3>Restaurant Website</h3>
+
+<p>A modern restaurant website with menu, gallery, and reservation section.</p>
+
+<a href="https://aman-107-all.github.io/restaurant-website/">Live Demo</a>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section class="section contact" id="contact">
+
+<h2>Contact Me</h2>
+
+<p>Feel free to reach out.</p>
+
+<div class="contact-links">
+
+<a href="mailto:amanmachhirke46@example.com">Email</a>
+
+<a href="https://instagram.com/m.aman_69" target="_blank">Instagram</a>
+
+<a href="https://wa.me/7499190691" target="_blank">WhatsApp</a>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+<p>© 2026 AMAN. All rights reserved.</p>
+
+</footer>
+
+</body>
+</html>
